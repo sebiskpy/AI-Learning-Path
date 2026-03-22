@@ -21,7 +21,7 @@ df['Age'] = df['Age'].fillna(age_median)
 # Dzięki temu model AI nie będzie 'myślał', że wiek jest ważniejszy niż cena biletu.
 df['Age_ZScore'] = (df['Age'] - df['Age'].mean()) / df['Age'].std()
 
-print("Podgląd wyczyszczonych danych z Z-Score:")
+print("Podgląd wyczyszczonych danych z Z-Score: ")
 print(df[['Age', 'Age_ZScore']].head())
 
 # 4. AGREGACJA (GROUPBY)
