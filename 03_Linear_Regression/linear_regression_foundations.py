@@ -11,6 +11,7 @@ y_normal = np.array([160, 210, 310, 505, 590, 850, 1120, 1350])
 
 # Scenariusz B: Wzrost z "viralem" (Outlierem na końcu)
 y_viral = np.array([160, 210, 310, 505, 590, 850, 1120, 5000])
+ls
 
 # 2. TRENOWANIE MODELI
 model_a = LinearRegression().fit(X, y_normal)
